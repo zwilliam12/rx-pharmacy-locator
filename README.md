@@ -12,3 +12,4 @@ Steps:
         java com.company.PharmacyLocator patientLatitude patientLongitude ../../../pharmacies.csv
    
    where patientLatitude and patientLongitude are the latitude and longitude of the patient.
+4. The program will output the resulting closest pharmacy to the command prompt, and additionally will create a html file in the base level of the project, called htmlOutput.html.    This file can be opened in a web browser for viewing.
