@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Pharmacy Locator</h1>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+var pharmacyLatLng = new google.maps.LatLng($pharmLat,$pharmLong);
+var pharmacyLabel = $pharmacyLabel;
+var patientLatLng = new google.maps.LatLng($patLat,$patLong)
+var patientLabel = "Patient's Location";
+var mapProp= {
+  center:pharmacyLatLng,
+  zoom:7,
+};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var pharmacy = new google.maps.Marker({
+  position:pharmacyLatLng,
+  animation:google.maps.Animation.DROP
+});
+var bounds = new google.maps.LatLngBounds();
+bounds.extend(pharmacyLatLng);
+bounds.extend(patientLatLng);
+map.panToBounds(bounds);
+var infowindow = new google.maps.InfoWindow({
+  content:pharmacyLabel
+});
+
+infowindow.open(map,pharmacy);
+
+pharmacy.setMap(map);
+var patient = new google.maps.Marker({
+  position:patientLatLng,
+  animation:google.maps.Animation.DROP
+});
+var infowindow = new google.maps.InfoWindow({
+  content:patientLabel
+});
+
+infowindow.open(map,patient);
+
+patient.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7G8-VFFxfd4G7yxz8p_9oNXB_d7I0M44&callback=myMap"></script>
+
+</body>
+</html>
+
