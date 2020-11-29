@@ -2,6 +2,7 @@
 Basic API to locate the nearest pharmacy given latitude/longitude input
 
 ------TO RUN THE PROGRAM------
+
 Prerequisites: Java jdk is installed and properly set in the user's PATH variable.
 
 Steps:
