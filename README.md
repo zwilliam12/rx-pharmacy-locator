@@ -3,7 +3,7 @@ Basic API to locate the nearest pharmacy given latitude/longitude input
 
 ------TO RUN THE PROGRAM------
 
-Prerequisites: Java jdk is installed and properly set in the user's PATH variable.
+Prerequisites: Latest java jdk is installed and properly set in the user's PATH variable.
 
 Steps:
 1. Download the rx-pharmacy-locator project (https://github.com/zwilliam12/rx-pharmacy-locator/archive/main.zip).
