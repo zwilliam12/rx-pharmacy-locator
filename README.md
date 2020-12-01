@@ -13,4 +13,4 @@ Steps:
         java com.company.PharmacyLocator patientLatitude patientLongitude absolutePharmaciesCsv
    
    where patientLatitude and patientLongitude are the latitude and longitude of the patient and absolutePharmaciesCsv is the absolute pathname of the csv file containing all          pharmacies.
-4. The program will output the resulting closest pharmacy to the command prompt, and additionally will create a html file in the base level of the project, called htmlOutput.html.    This file can be opened in a web browser for viewing.
+4. The program will output the resulting closest pharmacy to the command prompt, and additionally will create a html file in the base level of the project, called htmlOutput.html.    This file can be opened in a web browser for viewing and contains a google map with the patient and chosen pharmacy location.
