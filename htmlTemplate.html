@@ -24,6 +24,7 @@ var pharmacy = new google.maps.Marker({
 var bounds = new google.maps.LatLngBounds();
 bounds.extend(pharmacyLatLng);
 bounds.extend(patientLatLng);
+map.fitBounds(bounds);
 map.panToBounds(bounds);
 var infowindow = new google.maps.InfoWindow({
   content:pharmacyLabel
